@@ -8,7 +8,7 @@ plugs into.
 
 Usage:
     python3 build_sheet.py --input records.json --output STATE_Acquisition_Targets.xlsx \\
-        [--existing previous_version.xlsx] [--state "Florida"]
+        [--existing previous_version.xlsx] [--state "<state name>"]
 """
 import argparse
 import json

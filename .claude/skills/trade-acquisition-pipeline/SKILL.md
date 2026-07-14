@@ -1,14 +1,13 @@
 ---
 name: trade-acquisition-pipeline
-description: Build (or extend) a screened, owner-enriched acquisition-target list of independently-owned home-services contractors (HVAC, plumbing, electrical) for a given US state, for TJ's search-fund buy strategy. Use when asked to build/update/deepen a deal list or pipeline for a state ("build a Georgia list", "do Texas next", "deepen the Florida pool", "enrich the callable owners"), or to backfill DNC data on an existing state sheet.
+description: Build (or extend) a screened, owner-enriched acquisition-target list of independently-owned home-services contractors (HVAC, plumbing, electrical) for whichever US state the user names, for TJ's search-fund buy strategy. Use when asked to build/update/deepen a deal list or pipeline for a state ("build a list for <state>", "do <state> next", "deepen the <state> pool", "enrich the callable owners"), or to backfill DNC data on an existing state sheet. Not tied to any one state — always ask which state if it isn't specified.
 ---
 
 # Trade Acquisition Pipeline
 
-Reusable, state-agnostic protocol for sourcing acquisition targets in HVAC, plumbing, and
-electrical contracting. Originally built for Florida (see `references/florida_case_study.md`
-for the worked example — 227 companies, 116 owners identified, 26 dial-ready). Re-runs for
-any state by swapping the state name and the licensing-board reference.
+State-agnostic protocol for sourcing acquisition targets in HVAC, plumbing, and electrical
+contracting. Every run is scoped to whichever state the user names — there is no default or
+"home" state baked in anywhere in this skill; always ask if it isn't given.
 
 Read `references/schema.md`, `references/rollup_blocklist.md`, and
 `references/licensing_boards.md` before starting a new state — they contain detail that does
@@ -59,16 +58,16 @@ Useful parameters:
 
 Run `search_companies` against the target state using the SIC codes in
 `references/sic_codes.md` (1711 = Plumbing/Heating/AC, 1731 = Electrical Work — these are
-national codes, not Florida-specific) and the employee-count buy-box. Paginate — a single pass
-is usually a small fraction of the statewide universe in that headcount band; the user may
-want the list to grow well past the first pull, so don't stop after one page and call it done
-unless asked for a small sample.
+national codes, the same in every state) and the employee-count buy-box. Paginate — a single
+pass is usually a small fraction of the statewide universe in that headcount band; the user
+may want the list to grow well past the first pull, so don't stop after one page and call it
+done unless asked for a small sample.
 
-**The SIC codes are dirty everywhere, not just Florida.** SIC 1731 in particular sweeps in AV
-installers, alarm/security firms, telecom, fire protection, and solar companies, along with
-occasional total garbage (lamp distributors, research institutes, trade associations). Screen
-every record's actual business description before keeping it — expect to discard a large
-fraction of raw 1731 hits.
+**The SIC codes are dirty in every state.** SIC 1731 in particular sweeps in AV installers,
+alarm/security firms, telecom, fire protection, and solar companies, along with occasional
+total garbage (lamp distributors, research institutes, trade associations). Screen every
+record's actual business description before keeping it — expect to discard a large fraction of
+raw 1731 hits.
 
 ## 3. Screen out roll-ups and franchises — before spending any enrichment credit
 
@@ -79,9 +78,9 @@ brand, HQ city ≠ operating city, brand+city naming patterns (a sign of a roll-
 brand across acquired locals), and a C-suite that's too large for the reported headcount.
 
 These are **not acquirable from the operator** and outreach to them is wasted. Kill them at
-sourcing, before any ZoomInfo credit is spent on them. Florida and Texas are the most
-consolidated home-services markets in the US, so screen harder there, but check every state —
-consolidation is spreading.
+sourcing, before any ZoomInfo credit is spent on them. Consolidation levels vary by state and
+are spreading over time — don't assume any state is "clean" by default, and ask the user if
+they know of regional roll-ups worth screening for harder in a given state.
 
 Also watch for ownership flags that only surface once you have contact-level data: principals
 sharing an email domain that belongs to a *different* company (e.g., two owners both on
@@ -162,7 +161,7 @@ Use `scripts/build_sheet.py` (see `references/schema.md` for the full 24-column 
 
 ```
 python3 scripts/build_sheet.py --input records.json --output <STATE>_Acquisition_Targets.xlsx \
-    [--existing <previous_version>.xlsx] --state "Florida"
+    [--existing <previous_version>.xlsx] --state "<state name>"
 ```
 
 `records.json` is a JSON array of objects; see `references/schema.md` for the field names it

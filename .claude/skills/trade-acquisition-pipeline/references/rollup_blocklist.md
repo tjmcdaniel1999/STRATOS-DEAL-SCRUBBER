@@ -46,11 +46,9 @@ platforms show up across many states under many different local brand names. Kno
 families as of this writing (verify currency before relying on a name below — ownership
 changes hands):
 
-- **Wrench Group** — multi-brand HVAC/plumbing platform (has owned brands including Red Cap
-  Plumbing and Plumbing Today/Cool Today in Florida; operates similarly-structured local
-  brands in many other states).
-- **Leap Partners** — PE owner of home-services roll-ups (e.g., Rainaldi Home Services in FL).
-- **Southern HVAC / Astara** — HVAC platform (owns Ferran Services in FL).
+- **Wrench Group** — multi-brand HVAC/plumbing platform operating similarly-structured local
+  brands across many states.
+- **Leap Partners** — PE owner of home-services roll-ups.
 - **Authority Brands** — franchisor of Benjamin Franklin Plumbing, One Hour Heating & Air
   Conditioning, Mister Sparky (electrical), America's Swimming Pool Co., and others —
   national franchise system, not independent at the local level.
@@ -60,28 +58,23 @@ changes hands):
   roll-up), **CoolSys** (commercial HVAC/refrigeration roll-up) — active multi-state
   consolidators; check any target with an unusually corporate-sounding "Services" or
   "Partners" name against these.
-- **Z Plumberz**, **All Dry USA** — national franchise systems (seen directly in the Florida
-  pull; likely to recur in any state).
+- **Z Plumberz**, **All Dry USA** — national franchise systems.
 - Membership/warranty companies that aren't contractors at all, e.g. **Home-Tech** — screen
   these out entirely regardless of trade code, they don't operate as a contractor.
 
 ## State-specific confirmed kills (add to this section as states are worked)
 
-### Florida
+Add a subsection per state as you confirm roll-ups/franchises there, so future runs don't
+re-discover the same ones from scratch:
+
+```
+### <State>
 | Company | Why it's ineligible |
 |---|---|
-| Ferran Services | PE platform (Southern HVAC / Astara) |
-| Red Cap Plumbing | PE-owned (Wrench Group) |
-| Rainaldi Home Services | PE-owned (Leap Partners) |
-| Snyder Air Conditioning | PE-owned platform |
-| Best Home Services (Naples) | PE-owned platform |
-| Plumbing Today / Cool Today | Wrench Group platform |
-| Z Plumberz | National franchise system |
-| All Dry USA | National franchise |
-| Home-Tech | Warranty/membership co, not a contractor |
+| ... | PE-owned / franchise / platform subsidiary — not acquirable from the operator |
+```
 
-Florida and Texas are currently the most consolidated home-services markets in the US —
-screen harder there, but don't assume other states are clean; consolidation is spreading and
-regional roll-ups exist even where no national platform has moved in yet. Ask the user if they
-know of state-specific roll-ups not listed here, and add confirmed kills to this file so future
-runs don't re-discover them from scratch.
+Some regions are more consolidated than others and deserve extra scrutiny, but don't assume
+any state is "clean" by default — consolidation is spreading, and regional roll-ups exist even
+where no national platform has moved in yet. Ask the user if they know of state-specific
+roll-ups not covered by the seed list above.

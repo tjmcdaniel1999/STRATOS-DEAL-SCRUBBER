@@ -12,14 +12,15 @@ they're worked so future runs don't redo the research.
 
 | State | Agency | Relevant license types / prefixes | Public lookup |
 |---|---|---|---|
-| Florida | DBPR (Dept. of Business & Professional Regulation) | CAC (A/C contractor), CFC (plumbing), EC (electrical), CBC (building), CMC (mechanical) | DBPR online license search |
-| Texas | TDLR (electrical, A/C — "ACR" license), TSBPE (Texas State Board of Plumbing Examiners) | Split across two agencies: TDLR for electrical & HVAC (ACR), TSBPE for plumbing (RMP/journeyman) | Each agency has its own license lookup |
-| Georgia | Georgia State Construction Industry Licensing Board (under Secretary of State) | Conditioned Air (HVAC), Electrical, Plumbing — separate license classes | GA Secretary of State license search |
 | Arizona | Arizona Registrar of Contractors (ROC) | Classified by trade (e.g., C-39 plumbing, C-37 electrical, C-20/C-38 HVAC) | AZ ROC license search |
 | California | CSLB (Contractors State License Board) | C-20 (HVAC), C-36 (plumbing), C-10 (electrical) | CSLB license lookup |
+| Florida | DBPR (Dept. of Business & Professional Regulation) | CAC (A/C contractor), CFC (plumbing), EC (electrical), CBC (building), CMC (mechanical) | DBPR online license search |
+| Georgia | Georgia State Construction Industry Licensing Board (under Secretary of State) | Conditioned Air (HVAC), Electrical, Plumbing — separate license classes | GA Secretary of State license search |
 | North Carolina | NC Licensing Board for General Contractors (general); separate NC Board of Examiners for electrical, and NC State Board of Examiners of Plumbing, Heating & Fire Sprinkler Contractors | Trade-specific boards, not unified | Each board has its own lookup |
 | South Carolina | SC LLR Contractor's Licensing Board | Mechanical (HVAC), plumbing, electrical classifications | SC LLR license lookup |
 | Tennessee | TN Board for Licensing Contractors | HVAC, plumbing, electrical classifications | TN.gov license verification search |
+| Texas | TDLR (electrical, A/C — "ACR" license), TSBPE (Texas State Board of Plumbing Examiners) | Split across two agencies: TDLR for electrical & HVAC (ACR), TSBPE for plumbing (RMP/journeyman) | Each agency has its own license lookup |
+| *(any other state)* | Not yet researched | — | Find the state's contractor licensing board's public license-lookup tool and add a row here before relying on it |
 
 ## Notes
 

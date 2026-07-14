@@ -35,13 +35,13 @@ in parentheses.
 
 ```json
 {
-  "id": "CFC1234567",
+  "id": "LIC1234567",
   "company": "Example Plumbing & Air",
   "trade": "HVAC+Plumbing",
-  "city": "Tampa",
-  "state": "Florida",
+  "city": "Example City",
+  "state": "<state name>",
   "owner_best": "Jane Smith",
-  "owner_cell": "(813) 555-0100",
+  "owner_cell": "(555) 555-0100",
   "cell_dnc": "No",
   "cell_source": "ZoomInfo enrich_contacts",
   "owner_email": "jane@exampleplumbing.com",
