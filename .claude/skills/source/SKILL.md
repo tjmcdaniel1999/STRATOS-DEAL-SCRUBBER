@@ -1,5 +1,5 @@
 ---
-name: trade-acquisition-pipeline
+name: source
 description: Build (or extend) a screened, owner-enriched acquisition-target list of independently-owned home-services contractors (HVAC, plumbing, electrical) for whichever US state the user names, for TJ's search-fund buy strategy. Use when asked to build/update/deepen a deal list or pipeline for a state ("build a list for <state>", "do <state> next", "deepen the <state> pool", "enrich the callable owners"), or to backfill DNC data on an existing state sheet. Not tied to any one state — always ask which state if it isn't specified.
 ---
 

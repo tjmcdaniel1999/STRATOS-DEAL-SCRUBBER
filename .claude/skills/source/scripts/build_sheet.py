@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the formatted acquisition-target workbook for the trade-acquisition-pipeline skill.
+"""Build the formatted acquisition-target workbook for the /source skill.
 
 Reads a JSON array of company records (see references/schema.md for the field contract),
 applies the revenue-per-employee guard, computes EBITDA and Next Action, sorts, and writes a

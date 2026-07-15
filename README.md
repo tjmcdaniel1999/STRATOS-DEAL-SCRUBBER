@@ -5,10 +5,8 @@ independently-owned home-services contractors (HVAC, plumbing, electrical) into 
 call-ready acquisition-target list.
 
 The reusable protocol lives at
-[`.claude/skills/trade-acquisition-pipeline`](.claude/skills/trade-acquisition-pipeline/SKILL.md)
-as a Claude Code skill — it fires automatically in any Claude Code session opened on this repo
-when asked to build, deepen, or enrich a target list for a state (e.g. "build a list for
-<state>", "deepen the <state> pool", "enrich the callable owners"). It has no default or
-preferred state built in: point it at any US state and it runs the same ZoomInfo-driven
-sourcing → roll-up screening → owner enrichment → RPE-guarded revenue → formatted xlsx
-workflow.
+[`.claude/skills/source`](.claude/skills/source/SKILL.md) as a Claude Code skill named
+`source` — invoke it with `/source` (or just ask to build/deepen/enrich a state's list) in any
+Claude Code session opened on this repo. It has no default or preferred state built in: give it
+any US state and it runs the same ZoomInfo-driven sourcing → roll-up screening → owner
+enrichment → RPE-guarded revenue → formatted xlsx workflow.
